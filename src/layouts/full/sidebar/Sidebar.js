@@ -70,7 +70,6 @@ const MSidebar = (props) => {
                 {/* Sidebar Items */}
                 {/* ------------------------------------------- */}
                 <SidebarItems />
-                <Upgrade />
               </Box>
             </Sidebar >
           </Box>
