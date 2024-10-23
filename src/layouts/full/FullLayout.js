@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { styled, Container, Box } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 
@@ -32,12 +32,6 @@ const FullLayout = () => {
       className='mainwrapper'
     >
       {/* ------------------------------------------- */}
-      {/* Sidebar */}
-      {/* ------------------------------------------- */}
-      <Sidebar isSidebarOpen={isSidebarOpen}
-        isMobileSidebarOpen={isMobileSidebarOpen}
-        onSidebarClose={() => setMobileSidebarOpen(false)} />
-      {/* ------------------------------------------- */}
       {/* Main Wrapper */}
       {/* ------------------------------------------- */}
       <PageWrapper
@@ -66,6 +60,12 @@ const FullLayout = () => {
           {/* ------------------------------------------- */}
         </Container>
       </PageWrapper>
+      {/* ------------------------------------------- */}
+      {/* Sidebar */}
+      {/* ------------------------------------------- */}
+      <Sidebar isSidebarOpen={isSidebarOpen}
+               isMobileSidebarOpen={isMobileSidebarOpen}
+               onSidebarClose={() => setMobileSidebarOpen(false)} />
     </MainWrapper>
   );
 };
