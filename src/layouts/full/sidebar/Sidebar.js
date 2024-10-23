@@ -34,7 +34,7 @@ const MSidebar = (props) => {
         {/* Sidebar for desktop */}
         {/* ------------------------------------------- */}
         <Drawer
-          anchor="left"
+          anchor="right"
           open={props.isSidebarOpen}
           variant="permanent"
           PaperProps={{
@@ -80,7 +80,7 @@ const MSidebar = (props) => {
   }
   return (
     <Drawer
-      anchor="left"
+      anchor="right"
       open={props.isMobileSidebarOpen}
       onClose={props.onSidebarClose}
       variant="temporary"
