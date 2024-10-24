@@ -39,7 +39,7 @@ const Header = (props) => {
   return (
     <AppBarStyled position="sticky" color="default">
       <ToolbarStyled>
-        <Box className="right-items-container" sx ={{display:'flex'}}>
+        <Box className="right-items-container" sx={{ display: "flex" }}>
           <IconButton
             color="inherit"
             aria-label="menu"
@@ -75,7 +75,7 @@ const Header = (props) => {
           </Stack>
         </Box>
 
-        <Box className="left-items-container">
+        <Box className="left-items-container" sx={{ display: "flex" }}>
           <Button onClick={console.log("button1")} sx={{ color: "#5A6A85" }}>
             button1
           </Button>
