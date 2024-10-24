@@ -15,7 +15,9 @@ const NavItem = ({ item, level, pathDirect, onClick }) => {
   const Icon = item.icon;
   const theme = useTheme();
   const itemIcon = <Icon stroke={1.5} size="1.3rem" />;
-
+  const handleClick = () => {
+    console.log("button clicked");
+  };
   const ListItemStyled = styled(ListItem)(() => ({
     display: "flex",
     flexDirection: "row-reverse",
@@ -51,7 +53,7 @@ const NavItem = ({ item, level, pathDirect, onClick }) => {
         disabled={item.disabled}
         selected={pathDirect === item.href}
         target={item.external ? "_blank" : ""}
-        onClick={onClick}
+        onClick={handleClick}
       >
         <ListItemIcon
           sx={{
